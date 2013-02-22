@@ -37,6 +37,26 @@ $btnPrimaryBackgroundHighlight: darken($btnPrimaryBackground, 10%);
   margin-top:20px;
 }
 
+
+#weight {
+  width: 40%;
+  margin: 0px auto;
+  select: {
+  font-size:  20px;
+  height: 30px;
+  }
+  input {
+  border:  4px;
+  border-color: red;
+  margin:  0px auto;
+  text-align: center;
+  font-size: 50px;
+  color: #ffff00;
+  background-color: black;
+  height:  60px;
+  }
+}
+
 .alert {
   margin-left: 320px;
   width: 650px;
