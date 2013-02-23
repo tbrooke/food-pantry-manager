@@ -1,10 +1,5 @@
 = simple_form_for donation do |f|
   #weight
     = f.association :donor
-<<<<<<< HEAD
-    = f.input :weight, as: :decimal, input_html: {class: 'well', :size => 80},hint: 'Enter the weight from the Scales'
-    = f.button :submit, class: 'btn btn-danger btn-large'
-=======
     = f.input :weight, as: :decimal, value: number_with_precision(f.object.weight, precision: 1),hint: 'Enter the weight from the Scales'
     = f.button :submit, input_html: {class: 'btn btn-danger btn-large'}
->>>>>>> deploy
