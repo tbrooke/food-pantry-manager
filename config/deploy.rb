@@ -8,6 +8,7 @@ set :application, "food-pantry-manager"
 set :deploy_to, "/home/#{user}/apps/#{application}"
 set :deploy_via, :remote_cache
 set :use_sudo, false
+set :sudo_prompt, ""
 set :scm, "git"
 set :repository, "git@github.com:tbrooke/food-pantry-manager.git"
 set :branch, "ui-improvements"
