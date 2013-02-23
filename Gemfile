@@ -14,6 +14,8 @@ gem 'cocoon'
 gem 'activeadmin'
 gem "meta_search",    '>= 1.1.0.pre'
 
+gem 'capistrano'
+gem 'cap_bootstrap', :git => 'git@github.com:MainStMission/cap_bootstrap.git', :branch =>  'ubuntu-12-10'
 
 group :assets do
   gem "sass-rails"
