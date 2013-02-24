@@ -6,7 +6,7 @@ source :rubygems
 gem "rails", "3.2.11"
 gem 'nokogiri'
 gem "pg"
-gem "puma"
+gem "unicorn"
 gem "rails_setup"
 gem "devise"
 gem "strong_parameters"
