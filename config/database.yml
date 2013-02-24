@@ -1,15 +1,15 @@
 development:
   adapter: postgresql
   encoding: unicode
-  username: postgres
-  password: postgres
+  username: tmb
+  password:
   database: food-pantry_development
 
 test: &test
   adapter: postgresql
   encoding: unicode
-  username: postgres
-  password: postgres
+  username: tmb
+  password:
   database: food-pantry_test
 
 production:
