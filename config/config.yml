@@ -1,0 +1,20 @@
+---
+development:
+  lang: en_US.UTF-8
+  rack_env: development
+  rails_env: development
+  SECRET_TOKEN: !binary |-
+    NmVkZmYwOGUwMjFkYTk5YWQ1NGY5ZjM3NWM3ODY5NWNjN2NjYjcxN2ZhZTA4
+    MWZhM2M1NjIyYTA1YWEx
+test:
+  lang: en_US.UTF-8
+  rack_env: test
+  rails_env: test
+
+production:
+  lang: en_US.UTF-8
+  rack_env: production
+  rails_env: production
+  SECRET_TOKEN: !binary |-
+      NmVkZmYwOGUwMjFkYTk5YWQ1NGY5ZjM3NWM3ODY5NWNjN2NjYjcxN2ZhZTA4
+      MWZhM2M1NjIyYTA1YWEx

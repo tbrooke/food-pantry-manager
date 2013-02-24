@@ -34,7 +34,9 @@ test/tmp
 test/version_tmp
 tmp
 .rbx
-config/config.yml
+# lets put this in production
+
+# config/config.yml
 zeus.json
 custom_plan.rb
 
