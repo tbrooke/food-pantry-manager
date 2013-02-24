@@ -9,7 +9,7 @@ set :deploy_to, "/home/#{user}/apps/#{application}"
 set :deploy_via, :remote_cache
 set :use_sudo, false
 set :scm, "git"
-set :repository, "git@github.com:MainStMission/food-pantry-manager.git"
+set :repository, "git@github.com:tbrooke/food-pantry-manager.git"
 set :branch, "master"
 
 default_run_options[:pty] = true
