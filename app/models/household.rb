@@ -8,8 +8,9 @@ class Household < ActiveRecord::Base
  has_many :neighbors
  accepts_nested_attributes_for :neighbors, allow_destroy: true
 
-# Don't need this 
+
  def primary_neighbor
+
 
  end
 
