@@ -11,7 +11,7 @@ require "sprockets/railtie"
 
 if defined?(Bundler)
   # If you precompile assets before deploying to production, use this line
-    Bundler.require(*Rails.groups(:assets => %w(development test)))
+  Bundler.require(*Rails.groups(:assets => %w(development test)))
   # If you want your assets lazily compiled in production, use this line
   # Bundler.require(:default, :assets, Rails.env)
 end
@@ -19,7 +19,7 @@ end
 module FoodPantry
   class Application < Rails::Application  
 
-    config.autoload_paths += %W(#{Rails.root}/lib)
+   # config.autoload_paths += %W(#{Rails.root}/lib)
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
