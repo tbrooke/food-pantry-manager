@@ -85,7 +85,7 @@ class HouseholdsController < ApplicationController
 
     def allowable
       [
-          :household_name, :neighbors_attributes, :name
+          :household_name, :name, :neighbors_attributes
       ]
     end
 

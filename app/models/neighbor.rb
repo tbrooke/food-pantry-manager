@@ -2,8 +2,8 @@
 class Neighbor < ActiveRecord::Base  
  # include ActiveModel::ForbiddenAttributesProtection
 
-  validates :first_name, presence: {message: 'Neighbor must have a first name' }
-  validates :last_name, presence: {message: 'Neighbor must have a last name' }
+ # validates :first_name, presence: {message: 'Neighbor must have a first name' }
+ # validates :last_name, presence: {message: 'Neighbor must have a last name' }
 
 
   has_many :visits
