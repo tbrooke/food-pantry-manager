@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130219013031) do
+ActiveRecord::Schema.define(:version => 20130225024800) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -97,12 +97,12 @@ ActiveRecord::Schema.define(:version => 20130219013031) do
     t.string   "encrypted_ssn_salt"
     t.text     "notes"
     t.integer  "age"
-    t.text     "sex"
     t.integer  "household_id"
-    t.text     "middle_name"
-    t.text     "email"
     t.string   "apt"
     t.boolean  "done"
+    t.string   "sex"
+    t.string   "middle_name"
+    t.string   "email"
   end
 
   create_table "people", :force => true do |t|
