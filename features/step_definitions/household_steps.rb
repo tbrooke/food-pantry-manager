@@ -6,7 +6,7 @@ end
 
 
 
-When /^I create a household called "(.*?)"/ do |household|
+When /^I create a household called (.*?)/ do |household|
           visit new_household_path
           fill_in "Household", with: "#{household}"
           click_button "Create Household"
