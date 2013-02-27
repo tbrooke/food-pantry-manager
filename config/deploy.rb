@@ -4,8 +4,6 @@ require "cap_bootstrap/capistrano"
 server "198.211.102.14", :web, :app, :db, primary: true
 
 set :user, "deployer"
-set :application, "pantry"
-set :user, "deploy"
 set :application, "food-pantry-manager"
 set :deploy_to, "/home/#{user}/apps/#{application}"
 set :deploy_via, :remote_cache
