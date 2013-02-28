@@ -13,8 +13,6 @@ gem "strong_parameters"
 gem 'cocoon'
 gem 'activeadmin'
 gem "meta_search",    '>= 1.1.0.pre'
-gem "libnotify"
-gem "rb-inotify"
 
 gem 'capistrano'
 gem 'cap_bootstrap', :git => 'git@github.com:MainStMission/cap_bootstrap.git', :branch =>  'ubuntu-12-10'
