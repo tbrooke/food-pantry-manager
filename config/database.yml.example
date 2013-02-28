@@ -1,17 +1,23 @@
 development:
-  adapter: sqlite3
+  adapter: postgresql
+  user: tmb
+  password:
   encoding: unicode
-  database: db/food-pantry_development.db
+  database: db/pantry_development.db
 
 test: &test
-  adapter: sqlite3
+  adapter: postgresql
+  user: tmb
+  password: 
   encoding: unicode
-  database: db/food-pantry_test.db
+  database: db/pantry_test.db
 
 production:
-  adapter: sqlite3
+  adapter: postgresql
+  user: food-pantry-manager
+  password: tmb8518 
   encoding: unicode
-  database: db/food-pantry_production.db
+  database: db/pantry_production.db
 
 cucumber:
   <<: *test
