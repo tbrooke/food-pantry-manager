@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:MainStMission/cap_bootstrap.git
-  revision: 5f4e03aa4dd4fac48a5a5735ade7a655e2226c8e
+  revision: b5534f4fc1738b900b182cb3d987872fdd6b8788
   branch: ubuntu-12-10
   specs:
     cap_bootstrap (0.6.0)
