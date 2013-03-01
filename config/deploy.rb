@@ -11,7 +11,7 @@ set :use_sudo, false
 set :sudo_prompt, ""
 set :scm, "git"
 set :repository, "git@github.com:tbrooke/food-pantry-manager.git"
-set :branch, "ui"
+set :branch, "deploy"
 
 default_run_options[:pty] = true
 ssh_options[:forward_agent] = true
