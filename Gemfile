@@ -27,6 +27,13 @@ group :assets do
   gem 'jquery_datepicker'
 end
 
+
+group :production do
+  gem 'libnotify'
+  gem 'rb-inotify'
+
+end
+
 gem "jquery-rails"
 gem "haml-rails"
 gem "bourbon"
