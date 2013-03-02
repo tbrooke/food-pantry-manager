@@ -25,13 +25,13 @@ group :assets do
   gem 'font-awesome-rails'
   gem 'jquery-rails'
   gem 'jquery_datepicker'
+  gem 'turbo-sprockets-rails3'
 end
 
 
 group :production do
   gem 'libnotify'
   gem 'rb-inotify'
-
 end
 
 gem "jquery-rails"
