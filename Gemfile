@@ -11,7 +11,7 @@ gem "rails_setup"
 gem "devise"
 gem "strong_parameters"
 gem 'cocoon'
-gem 'activeadmin'
+#gem 'activeadmin'
 gem "meta_search",    '>= 1.1.0.pre'
 
 gem 'capistrano'
