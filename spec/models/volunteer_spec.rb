@@ -55,5 +55,15 @@ describe NotSignedInTime do
   it "prints a helpful message" do
     NotSignedInTime.to_s.should match(/not signed in/i)
   end
+
+### Donortools API Integration
+
+describe Donortool do
+  it "accesses the Donortools API and returns a persona objetc" do
+    @tdonor = Donortool.new
+    @tdoner.name =  'Tom '
+  end
+end
+
 end
 
