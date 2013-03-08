@@ -16,6 +16,7 @@
 //= require bootstrap
 //= require cocoon
 //= require header
+//= require select2
 //= require_tree .
 
 $("input.date_picker").datepicker();
