@@ -1,8 +1,11 @@
 = simple_form_for donation do |f|
   #weight
     %fieldset
-      = f.association :donor
-      = link_to 'Add Donor', new_donor_path , class: 'btn btn-mini'
+      = f.input_field :donor_names, url: autocomplete_donor_name_searches_path,
+       as: :autocomplete, data: { delimiter: ',', placeholder: "Start typing to locate Donor?"},
+       multiple: true, id: "selectDonor", class: "span2"
+      -#= f.association :donor
+      -#= link_to 'Add Donor', new_donor_path , class: 'btn btn-mini'
     .row
     %br
     = f.input :weight
