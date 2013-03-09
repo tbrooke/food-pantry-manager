@@ -5,8 +5,9 @@ Given /^I visit the donations page$/ do
 end
 
 When /^I search for (.*)$/ do |term|
+  @searchee = DonorSearch.new
   @donors ||= {}
-  @donors[term] = DonorSearch.search_name(term)
+  @donors[term] = @searchee.search_name(term)
 end
 
 
