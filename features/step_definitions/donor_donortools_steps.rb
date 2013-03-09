@@ -10,6 +10,10 @@ When /^I search for (.*)$/ do |term|
   @donors[term] = @searchee.search_name(term)
 end
 
+And /^(.*) is in Donors?/ do
+
+end
+
 
 And /^(.*) is in Donortools$/ do |term|
 

@@ -1,7 +1,7 @@
 = simple_form_for donation do |f|
   #weight
     %fieldset
-     = f.input_field :donor_search, input_html:  { class: "span2 ac-select2" }
+      = f.input_field :donor_name, input_html:  { class: "span2 select2" }
       -#= f.association :donor
       -#= link_to 'Add Donor', new_donor_path , class: 'btn btn-mini'
     .row

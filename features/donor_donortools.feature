@@ -4,10 +4,17 @@ Feature: Get Donors from Donortools
   Scenario: Adding a new Donation
     Given I visit the donations page
     When I search for 'Mary Brooks'
-    And 'Mary Brooks' is in Donortools
+    And 'Mary Brooks' is in Donors
     Then I should see 'Mary Brooks' in the search box
 
 
+Scenario: Adding a new Donation
+    Given I visit the donations page
+    When I search for 'Mary Brooks'
+    And "Mary Brooks" is not in Donors
+    And I search for 'Mary Brooks' in DonorTools
+    And 'Mary Brooks' is in DonorTools
+    Then I should see 'Mary Brooks' in the search box
 
 
 

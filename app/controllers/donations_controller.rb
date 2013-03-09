@@ -37,9 +37,7 @@ class DonationsController < ApplicationController
     end
   end
 
-  def donor_search
-    @donor_search = {}
-  end
+
 
   private
 
