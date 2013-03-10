@@ -1,6 +1,7 @@
 class DonorSearch
 
-  def search_name(name)
-    @name = name
+
+  def search_donors (first, last)
+
   end
 end
