@@ -22,4 +22,4 @@
 $("input.date_picker").datepicker();
 
 jQuery ->
-$('#selectDonor').select2()
+$('#selectWhereToLive').select2()

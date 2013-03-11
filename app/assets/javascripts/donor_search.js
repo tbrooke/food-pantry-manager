@@ -20,8 +20,8 @@ $("#e7").select2({
             return {results: data.movies, more: more};
         }
     },
-    formatResult: movieFormatResult, // omitted for brevity, see the source of this page
-    formatSelection: movieFormatSelection, // omitted for brevity, see the source of this page
+//    formatResult: movieFormatResult, // omitted for brevity, see the source of this page
+//    formatSelection: movieFormatSelection, // omitted for brevity, see the source of this page
     dropdownCssClass: "bigdrop", // apply css that makes the dropdown taller
     escapeMarkup: function (m) { return m; } // we do not want to escape markup since we are displaying html in results
 });
