@@ -15,7 +15,10 @@ gem 'activeadmin', github: 'Daxter/active_admin', branch: 'bugfix/1773-execjs'
 gem "meta_search",    '>= 1.1.0.pre'
 gem 'kaminari'
 #gem 'moneta'
-#gem 'select2-rails'
+gem 'select2-rails'
+gem 'angularjs-rails'
+gem "angularjs-rails-resource", '~> 0.0.2'
+gem "active_model_serializers", "~> 0.7.0"
 
 gem "prawn"
 gem "coffee-rails"
