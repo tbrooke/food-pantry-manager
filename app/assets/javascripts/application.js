@@ -17,9 +17,10 @@
 //= require cocoon
 //= require header
 //= require select2
+//= require angular
+//= require angular-ui
+//= require angularjs/rails/resource
 //= require_tree .
 
 $("input.date_picker").datepicker();
 
-jQuery ->
-$('#selectWhereToLive').select2()
