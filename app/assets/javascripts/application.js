@@ -20,6 +20,7 @@
 //= require angular
 //= require angular-ui
 //= require angularjs/rails/resource
+//= require donation
 //= require_tree .
 
 $("input.date_picker").datepicker();

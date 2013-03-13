@@ -1,7 +1,9 @@
 = simple_form_for donation do |f|
-  = f.input_field :donor_name, input_html:  { class: "span2 select2" }
+  -#= f.input_field :donor_name, input_html:  { class: "span2 select2" }
   -#= f.association :donor
-  %div
+  %div{"ng-controller" => "AddDonor"}
+    %input{:name => "donor_name", :placeholder => "Enter donor's name here", :size => "35", :type => "text", "ng-model" => "data.message"}/
+    %p {{data.message + " world"}}
   -#= link_to 'Add Donor', new_donor_path , class: 'btn btn-mini'
   .row
   #weight
