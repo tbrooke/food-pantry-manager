@@ -23,5 +23,5 @@
 //= require donation
 //= require_tree .
 
-$("input.date_picker").datepicker();
+//$("input.date_picker").datepicker();
 

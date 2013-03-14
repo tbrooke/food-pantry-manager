@@ -2,7 +2,7 @@
   -#= f.input_field :donor_name, input_html:  { class: "span2 select2" }
   -#= f.association :donor
   %div{"ng-controller" => "AddDonor"}
-    %input{:name => "donor_name", :placeholder => "Enter donor's name here", :size => "35", :type => "text", "ng-model" => "data.message"}/
+    %input{:type => "text", "ng-model" => "data.message", :placeholder => "Enter donor's name here", :size => "35"}
     %p {{data.message + " world"}}
   -#= link_to 'Add Donor', new_donor_path , class: 'btn btn-mini'
   .row
