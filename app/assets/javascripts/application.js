@@ -19,6 +19,7 @@
 //= require select2
 //= require angular
 //= require angular-ui
+//= require angular-resource
 //= require donation
 //= require_tree .
 
