@@ -17,7 +17,6 @@ gem 'kaminari'
 #gem 'moneta'
 gem 'select2-rails'
 gem 'angularjs-rails'
-gem "angularjs-rails-resource", '~> 0.0.2'
 gem "active_model_serializers", "~> 0.7.0"
 
 gem "prawn"

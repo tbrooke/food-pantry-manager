@@ -2,13 +2,13 @@
  * Timeago is a jQuery plugin that makes it easy to support automatically
  * updating fuzzy timestamps (e.g. "4 minutes ago" or "about 1 day ago").
  *
- * @name timeago
+ * @name ti/app/assets/javascripts/jquery.timeago.js:8ago
  * @version 0.11.4
  * @requires jQuery v1.2.3+
  * @author Ryan McGeary
  * @license MIT License - http://www.opensource.org/licenses/mit-license.php
  *
- * For usage and examples, visit:
+ * For usage and examples, visit:                        /app/assets/stylesheets/application.css.scss:75
  * http://timeago.yarp.com/
  *
  * Copyright (c) 2008-2012, Ryan McGeary (ryan -[at]- mcgeary [*dot*] org)
