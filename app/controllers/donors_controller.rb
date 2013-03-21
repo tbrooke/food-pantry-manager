@@ -85,7 +85,7 @@ class DonorsController < ApplicationController
   def allowable
     [
 
-    ]
+
     ]
   end
 
