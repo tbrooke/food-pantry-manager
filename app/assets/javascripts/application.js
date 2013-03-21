@@ -19,7 +19,6 @@
 //= require select2
 //= require angular
 //= require angular-ui
-//= require angularjs/rails/resource
 //= require donation
 //= require_tree .
 
