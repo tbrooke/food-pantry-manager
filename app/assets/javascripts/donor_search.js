@@ -1,27 +1,38 @@
-$("#e7").select2({
-    placeholder: "Search for a donor",
-    minimumInputLength: 3,
-    ajax: {
-        url: "-u api@mainstmission.org:AnneCorriher https://main_street_mission.donortools.com/people.json",
-        dataType: 'jsonp',
-        quietMillis: 100,
-        data: function (term, page) { // page is the one-based page number tracked by Select2
-            return {
-                q: term, //search term
-                page_limit: 10, // page size
-                page: page, // page number
-//                apikey: "ju6z9mjyajq2djue3gbvv26t" // please do not use so this example keeps working
-            };
-        },
-        results: function (data, page) {
-            var more = (page * 10) < data.total; // whether or not there are more results available
+var app;
 
-            // notice we return the value of more so Select2 knows if more results can be loaded
-            return {results: data.movies, more: more};
-        }
-    },
-//    formatResult: movieFormatResult, // omitted for brevity, see the source of this page
-//    formatSelection: movieFormatSelection, // omitted for brevity, see the source of this page
-    dropdownCssClass: "bigdrop", // apply css that makes the dropdown taller
-    escapeMarkup: function (m) { return m; } // we do not want to escape markup since we are displaying html in results
-});
+app = angular.module("Donor", ["ngResource"]);
+
+app.factory("Donors", [
+    "$resource", function($resource) {
+        return $resource("/donors", {}, {
+            update: {
+                method: "PUT"
+            }
+        });
+    }
+]);
+
+app.factory("Donor", [
+    "$resource", function($resource) {
+        return $resource("/donors/:id", {
+            id: "@id"
+        }, {
+            update: {
+                method: "GET"
+            }
+        });
+    }
+]);
+
+this.DonorCtrl = [
+    "$scope", "Donor", "Donors", function($scope, Donor, Donors) {
+        var donor;
+        $scope.donor = Donor.query();
+        $scope.donors = Donors.query();
+        $scope.addDonor = function() {};
+        donor = Donor.save($scope.newDonor)(function() {
+            return $scope.donors.push(donor);
+        });
+        return $scope.newDonor = {};
+    }
+];

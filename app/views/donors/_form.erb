@@ -1,6 +1,11 @@
-<div ng-app="">
-  <div ng-controller="donor">
+<div ng-app="Donor">
+  <div ng-controller="DonorCtrl">
 
+    <form ng-submit="addDonor()">
+      <button class="btn">Search</button>
+      <input type="search" ng-model="newDonor.name" placeholder="Search..." />
+      <input type="submit" value="Add Donor">
+    </form>
 
   </div>
 </div>
