@@ -19,8 +19,10 @@
 //= require select2
 //= require angular
 //= require angular-ui
-//= require angular-resource
+//= require angular-underscore
+//= require angularjs/rails/resource
 //= require donation
+//= require typeahead
 //= require_tree .
 
 //$("input.date_picker").datepicker();

@@ -90,7 +90,7 @@ class DonorsController < ApplicationController
   end
 
   def safe_params
-    params.require(:household).permit(*allowable)
+    params.require(:donor).permit(*allowable)
   end
 
 end
