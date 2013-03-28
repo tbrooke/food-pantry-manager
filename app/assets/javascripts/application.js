@@ -18,7 +18,8 @@
 //= require header
 //= require select2
 //= require angular
-//= require angular-ui
+//= require underscore.min.js
+//= require angular-ui.min.js
 //= require angular-underscore
 //= require angularjs/rails/resource
 //= require donation
