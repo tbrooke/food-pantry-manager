@@ -9,7 +9,6 @@ class DonorsController < ApplicationController
 
     respond_to do |format|
       format.html # index.html.erb
-      format.json { render json: @donors }
     end
   end
 
@@ -20,7 +19,6 @@ class DonorsController < ApplicationController
 
     respond_to do |format|
       format.html # show.html.erb
-      format.json { render json: @donor }
     end
   end
 
@@ -30,7 +28,6 @@ class DonorsController < ApplicationController
     @donor = Donor.new
     respond_to do |format|
       format.html # new.html.erb
-      format.json { render json: @donor }
     end
   end
 
@@ -60,10 +57,8 @@ class DonorsController < ApplicationController
     respond_to do |format|
       if @donor.save
         format.html { redirect_to @donor, notice: 'household was successfully created.' }
-        format.json { render json: @donor, status: :created, location: @donor }
       else
         format.html { render action: "new" }
-        format.json { render json: @donor.errors, status: :unprocessable_entity }
       end
     end
   end

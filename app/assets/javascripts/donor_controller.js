@@ -28,7 +28,7 @@ this.DonorCtrl = [
     "$scope", "Donor", "Donors", function($scope, Donor, Donors) {
         var donor;
         $scope.donor = Donor.query();
-        $scope.donors = Donors.query();
+        $scope.donors = Donors;
         $scope.addDonor = function() {};
         donor = Donor.save($scope.newDonor)(function() {
             return $scope.donors.push(donor);

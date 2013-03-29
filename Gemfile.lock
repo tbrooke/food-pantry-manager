@@ -16,6 +16,18 @@ GIT
       rails (>= 3.0.0)
       sass (>= 3.1.0)
 
+GIT
+  remote: git://github.com/FineLinePrototyping/restful_json.git
+  revision: d6ceeb5e6c80d227941015410673b99faea709a4
+  specs:
+    restful_json (3.0.0.alpha.27)
+      actionpack
+      active_model_serializers
+      activerecord
+      cancan
+      rails-api
+      strong_parameters
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -72,6 +84,7 @@ GEM
     bourne (1.1.2)
       mocha (= 0.10.5)
     builder (3.0.4)
+    cancan (1.6.9)
     capybara (2.0.2)
       mime-types (>= 1.16)
       nokogiri (>= 1.3.3)
@@ -242,6 +255,10 @@ GEM
       activesupport (= 3.2.12)
       bundler (~> 1.0)
       railties (= 3.2.12)
+    rails-api (0.0.3)
+      actionpack (>= 3.2.6)
+      railties (>= 3.2.6)
+      tzinfo (~> 0.3.31)
     rails_setup (0.0.3)
       highline
       rails (>= 3.0.0)
@@ -387,6 +404,7 @@ DEPENDENCIES
   rb-fsevent
   rb-inotify
   rb-notifu
+  restful_json (>= 3.0.0.alpha.27)!
   rspec-rails (~> 2.12)
   ruby_gntp
   sass-rails

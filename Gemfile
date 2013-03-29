@@ -4,6 +4,9 @@ HOST_OS = RbConfig::CONFIG["host_os"]
 source "https://rubygems.org"
 
 gem "rails", "3.2.12"
+
+gem 'restful_json', '>= 3.0.0.alpha.27', :git => 'git://github.com/FineLinePrototyping/restful_json.git'
+
 gem 'nokogiri'
 gem "pg"
 gem "puma"
