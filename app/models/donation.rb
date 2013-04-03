@@ -1,6 +1,6 @@
 # -*- encoding : utf-8 -*-
 class Donation < ActiveRecord::Base
-  include ActiveModel::ForbiddenAttributesProtection
+  #include ActiveModel::ForbiddenAttributesProtection
 
   belongs_to :donor
 

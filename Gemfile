@@ -5,19 +5,18 @@ source "https://rubygems.org"
 
 gem "rails", "3.2.12"
 
-gem 'restful_json', '>= 3.0.0.alpha.27', :git => 'git://github.com/FineLinePrototyping/restful_json.git'
+gem 'restful_json', '3.2.2', :git => 'git://github.com/rubyservices/restful_json.git'
 
 gem 'nokogiri'
 gem "pg"
 gem "puma"
 gem "rails_setup"
 gem "devise"
-gem "strong_parameters"
+#gem "strong_parameters"
 gem 'cocoon'
 gem 'activeadmin', github: 'Daxter/active_admin', branch: 'bugfix/1773-execjs'
 gem "meta_search",    '>= 1.1.0.pre'
 gem 'kaminari'
-gem 'select2-rails'
 gem 'angularjs-rails'
 gem "active_model_serializers", "~> 0.7.0"
 gem 'angularjs-rails-resource'

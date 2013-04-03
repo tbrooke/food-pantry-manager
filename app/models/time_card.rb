@@ -7,7 +7,7 @@ class << NotSignedInTime
 end
 
 class TimeCard < ActiveRecord::Base
-  include ActiveModel::ForbiddenAttributesProtection
+  #include ActiveModel::ForbiddenAttributesProtection
 
   def self.clock_in(volunteer, clock=DateTime)
     unless signed_in?(volunteer)

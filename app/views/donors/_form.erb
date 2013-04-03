@@ -1,10 +1,8 @@
 <div ng-app="Donor">
-  <div ng-controller="DonorCtrl">
+  <div class='container-fluid' ng-controller="TypeaheadCtrl">
 
-    <form ng-submit="addDonor()">
-      <input type="text" ng-model="donor.last_name" typeahead="donor for donor in donors" placeholder="Last, First..." />
-      <input type="submit" value="Add Donor">
-    </form>
-
+     <pre>Model: {{selected| json}}</pre>
+      <input type="text" ng-model="selected" typeahead="donor for donor in donors | filter:$viewValue"  />
+      <!--<input type="submit" value="Add Donor">-->
   </div>
 </div>

@@ -2,7 +2,11 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
 
-  decent_configuration do
-    strategy StrongParametersStrategy
+  def current_user
+    User.new
   end
+  #
+  #decent_configuration do
+  #  strategy StrongParametersStrategy
+  #end
 end

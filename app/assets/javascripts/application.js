@@ -16,14 +16,12 @@
 //= require bootstrap
 //= require cocoon
 //= require header
-//= require select2
 //= require angular
 //= require underscore-min.js
 //= require angular-ui.min.js
 //= require angular-underscore
-//= require angularjs/rails/resource
+//= require angular-resource
 //= require donor_controller
-//= require typeahead
 //= require_tree .
 
 //$("input.date_picker").datepicker();
