@@ -13,10 +13,8 @@ angular.module('Donor', ['ngResource']);
 
 
 app.factory("Donor", function($resource) {
-        return $resource("/donors/:last_name", {}, {
-            query: { method: "GET", isArray: false }
-        });
-})
+        return $resource("/donors/:id");
+});
 
 
 
@@ -24,13 +22,13 @@ app.controller("DonorIndexCtrl", function($scope, Donor){
         Donor.query(function(data) {
             $scope.donors = data;
         });
-})
+});
 
 app.controller("DonorShowCtrl", function($scope, Donor) {
     Donor.get({ id: 1 }, function(data) {
         $scope.donor = data.donor;
     });
-})
+});
 
 
 
