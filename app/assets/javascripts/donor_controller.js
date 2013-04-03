@@ -9,11 +9,11 @@
 //            }
 //        });
 
-angular.module('Donor', ['ui.bootstrap']);
+angular.module('Donor', ['ngResource']);
 
 
 app.factory("Donor", function($resource) {
-        return $resource("/donors/:id", {}, {
+        return $resource("/donors/:last_name", {}, {
             query: { method: "GET", isArray: false }
         });
 })
@@ -22,7 +22,7 @@ app.factory("Donor", function($resource) {
 
 app.controller("DonorIndexCtrl", function($scope, Donor){
         Donor.query(function(data) {
-            $scope.donors = data.donors;
+            $scope.donors = data;
         });
 })
 
