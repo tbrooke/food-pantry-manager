@@ -21,6 +21,7 @@
 //= require angular-ui.min.js
 //= require angular-underscore
 //= require angular-resource
+//= require resource
 //= require donor_controller
 //= require_tree .
 

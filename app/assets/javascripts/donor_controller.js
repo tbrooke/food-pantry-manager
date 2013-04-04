@@ -13,7 +13,7 @@ angular.module('Donor', ['ngResource']);
 
 
 app.factory("Donor", function($resource) {
-        return $resource("/donors/:id");
+        return $resource("/donors/:id"), {id: "@id"};
 });
 
 
@@ -28,7 +28,6 @@ app.controller("DonorShowCtrl", function($scope, Donor) {
     Donor.get({ id: 1 }, function(data) {
         $scope.donor = data.donor;
     });
-});
 
 
 
