@@ -9,33 +9,37 @@
 //            }
 //        });
 
-angular.module('Donor', ['ngResource']);
+//angular.module('Donor', ['ngResource']);
 
+angular.module('donor.services', ['rails']);
+angular.module('donor.services').factory('Donor', ['railsResourceFactory', function (railsResourceFactory) {
+    return railsResourceFactory({url: '/donors', last_name: 'donor'});
+}]);
 
-app.factory("Donor", function($resource) {
-        return $resource("/donors/:id"), {id: "@id"};
-});
-
-
-
-app.controller("DonorIndexCtrl", function($scope, Donor){
-        Donor.query(function(data) {
-            $scope.donors = data;
-        });
-});
-
-app.controller("DonorShowCtrl", function($scope, Donor) {
-    Donor.get({ id: 1 }, function(data) {
-        $scope.donor = data.donor;
-    });
-
-
-
-function TypeaheadCtrl($scope) {
-
-    $scope.selected = undefined;
-    $scope.donors = ['Bullard', 'Corriher', 'Davis', 'Deal', 'Harding' ];
-}
+//app.factory("Donor", function($resource) {
+//        return $resource("/donors/:id"), {id: "@id"};
+//});
+//
+//
+//
+//app.controller("DonorIndexCtrl", function($scope, Donor){
+//        Donor.query(function(data) {
+//            $scope.donors = data;
+//        });
+//});
+//
+//app.controller("DonorShowCtrl", function($scope, Donor) {
+//    Donor.get({ id: 1 }, function(data) {
+//        $scope.donor = data.donor;
+//    });
+//
+//
+//
+//function TypeaheadCtrl($scope) {
+//
+//    $scope.selected = undefined;
+//    $scope.donors = ['Bullard', 'Corriher', 'Davis', 'Deal', 'Harding' ];
+//}
 
 //this.DonorCtrl = [
 //    "$scope", "Donor", "Donors", function($scope, Donor, Donors) {
