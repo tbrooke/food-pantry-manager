@@ -16,11 +16,11 @@
 //= require bootstrap
 //= require cocoon
 //= require header
-//= require angular
+//= require ./angular/angular
 //= require underscore-min.js
-//= require angular-ui.min.js
-//= require angular-underscore
-//= require angular-resource
+//= require ./angular/angular-ui.min.js
+//= require ./angular/angular-underscore
+//= require ./angular/angular-resource
 //= require resource
 //= require donor_controller
 //= require_tree .
