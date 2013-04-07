@@ -3,7 +3,7 @@ HOST_OS = RbConfig::CONFIG["host_os"]
 
 source "https://rubygems.org"
 
-gem "rails", "3.2.12"
+gem 'rails', "3.2.12"
 
 gem 'restful_json', '3.2.2', :git => 'git://github.com/rubyservices/restful_json.git'
 

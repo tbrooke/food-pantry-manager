@@ -21,8 +21,12 @@
 //= require ./angular/angular-ui.min.js
 //= require ./angular/angular-underscore
 //= require ./angular/angular-resource
+//= require ./donors/services
+//= require ./donors/assets
+//= require ./donors/directives
+//= require ./donors/filters
 //= require resource
-//= require donor_controller
+//= require donors/controllers/donor_controller
 //= require_tree .
 
 //$("input.date_picker").datepicker();
