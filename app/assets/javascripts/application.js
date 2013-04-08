@@ -18,6 +18,7 @@
 //= require header
 //= require underscore-min.js
 //= require ./angular/angular
+//= require ./angular/angular-resource
 //= require ./angular/angular-bootstrap
 //= require ./angular/angular-bootstrap-prettify
 //= require ./angular/angular-cookies
@@ -28,7 +29,6 @@
 //= require ./angular/angular-scenario
 //= require ./angular/angular-ui.min.js
 //= require ./angular/angular-underscore
-//= require ./angular/angular-resource
 //= require angularjs/rails/resource
 //= require donor_controller
 //= require donor_service

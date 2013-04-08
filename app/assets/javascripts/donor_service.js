@@ -1,3 +1,32 @@
+var app;
+
+app = angular.module("Donor", ["ngResource"]);
+
+app.factory("Donors", [
+    "$resource", function($resource) {
+        return $resource("/donors", {}, {
+            update: {
+                method: "PUT"
+            }
+        });
+    }
+]);
+
+app.factory("Donor", [
+    "$resource", function($resource) {
+        return $resource("/donors/:id", {
+            id: "@id"
+        }, {
+            update: {
+                method: "GET"
+            }
+        });
+    }
+]);
+
+
+
+
 //var app = angular.module("Donor", ["ngResource"]);
 //
 //app.factory("Donor", [
@@ -7,16 +36,17 @@
 //                method: "GET", isArray:true
 //            }
 //        });
-//
-////angular.module('Donor', ['ngResource']);
-//
-//        angular.module('donor.services', ['rails']);
-//        angular.module('donor.services').factory('Donor', ['railsResourceFactory', function (railsResourceFactory) {
-//            return railsResourceFactory({url: '/donors', last_name: 'donor'});
 
-angular.module('donor', ['ui.bootstrap']);
-function TypeaheadCtrl($scope) {
+//angular.module('Donor', ['ngResource']);
+//
+//angular.module('donor.services', ['rails']);
+//
+//angular.module('donor.services').factory('Donor', ['railsResourceFactory', function (railsResourceFactory) {
+//    return railsResourceFactory({url: '/donors', lastName: 'donor'}).then(function (donors) {
+//        self.donors = donors;
+//        return self.references;
+//    }
+//});
 
-    $scope.selected = undefined;
-    $scope.donors = ['Bullard', 'Corriher', 'Deal', 'Jones', 'Eddleman' ];
-};
+
+

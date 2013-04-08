@@ -1,5 +1,6 @@
-<div ng-controller="donation">
-
-</div>
-
-test
+<%= simple_form_for @donation do |f| %>
+    <%= f.input :name %>
+    <%= f.association :donor %>
+    <%= f.input :weight %>
+    <%= f.button :submit %>
+<% end %>

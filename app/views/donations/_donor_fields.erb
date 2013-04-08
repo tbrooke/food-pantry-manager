@@ -1,3 +1,7 @@
-= simple_form_for donor do |f|
-= f.input :name
-= f.button :submit
+<div ng-app="donor">
+  <div class='container-fluid' ng-controller="TypeaheadCtrl">
+
+    <pre>Model: {{selected| json}}</pre>
+    <input type="text" ng-model="selected" typeahead="donor for donor in donors | filter:$viewValue"  />
+  </div>
+</div>
