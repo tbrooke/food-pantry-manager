@@ -16,17 +16,22 @@
 //= require bootstrap
 //= require cocoon
 //= require header
-//= require ./angular/angular
 //= require underscore-min.js
+//= require ./angular/angular
+//= require ./angular/angular-bootstrap
+//= require ./angular/angular-bootstrap-prettify
+//= require ./angular/angular-cookies
+//= require ./angular/angular-loader
+//= require ./angular/angular-mobile
+//= require ./angular/angular-mocks
+//= require ./angular/angular-sanitize
+//= require ./angular/angular-scenario
 //= require ./angular/angular-ui.min.js
 //= require ./angular/angular-underscore
 //= require ./angular/angular-resource
-//= require ./donors/services
-//= require ./donors/assets
-//= require ./donors/directives
-//= require ./donors/filters
-//= require resource
-//= require donors/controllers/donor_controller
+//= require angularjs/rails/resource
+//= require donor_controller
+//= require donor_service
 //= require_tree .
 
 //$("input.date_picker").datepicker();
