@@ -8,12 +8,14 @@
       %thead
         %tr
           %th Donor
+          %th Date
           %th Weight
           %th Actions
       %tbody
         - donations.each do |donation|
           %tr
             %td= donation.donor_name
+            %td= donation.date
             %td= donation.weight
             %td
               = link_to 'Edit', edit_donation_path(donation), class: 'btn btn-mini'
